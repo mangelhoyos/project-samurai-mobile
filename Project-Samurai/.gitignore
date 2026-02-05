@@ -1,0 +1,126 @@
+# =========================
+# Unity
+# =========================
+.utmp/
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+*.log
+
+# Memory & recordings
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+
+# Blender backup files
+*.blend1
+*.blend1.meta
+
+# Asset Store Tools (optional)
+# /[Aa]ssets/AssetStoreTools*
+
+# =========================
+# IDEs & Editors
+# =========================
+# Visual Studio
+.vs/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.opendb
+*.VC.db
+
+# Rider
+/[Aa]ssets/Plugins/Editor/JetBrains*
+*.DotSettings.user
+
+# VS Code
+.vscode/
+
+# =========================
+# OS Generated
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Unity Generated Meta
+# =========================
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Crash reports
+sysinfo.txt
+mono_crash.*
+
+# =========================
+# Builds / Packages
+# =========================
+*.apk
+*.aab
+*.app
+*.unitypackage
+*.unitypackage.meta
+
+# =========================
+# Android / Gradle
+# =========================
+.gradle/
+/Android/
+/AndroidBuild/
+/Temp/gradle*
+/Assets/Plugins/Android/.gradle/
+/Assets/Plugins/Android/build/
+/Assets/Plugins/Android/local.properties
+
+# Keystore (NEVER COMMIT)
+*.keystore
+*.jks
+*.key
+
+# Firebase / Google logs
+**/firebase-debug.log
+**/firebase-*.log
+
+# =========================
+# iOS
+# =========================
+*.xcworkspace
+*.xcodeproj
+*.xcuserstate
+*.xcuserdatad
+DerivedData/
+
+# =========================
+# Addressables
+# =========================
+/ServerData
+/[Aa]ssets/StreamingAssets/aa*
+/[Aa]ssets/AddressableAssetsData/link.xml*
+/[Aa]ssets/Addressables_Temp*
+/[Aa]ssets/AddressableAssetsData/*/*.bin*
+
+# =========================
+# Visual Scripting
+# =========================
+/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db
+/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db.meta
+/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers
+/[Aa]ssets/Unity.VisualScripting.Generated/VisualScripting.Core/Property Providers.meta
+
+# =========================
+# Test Runner
+# =========================
+InitTestScene*.unity*
+/[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
