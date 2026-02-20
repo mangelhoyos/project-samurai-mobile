@@ -33,7 +33,7 @@ public class WordListWrapper
 
 public static class WordDataManager
 {
-    private static Dictionary<WsDifficulty, string[]> _loadedWords = new Dictionary<WsDifficulty, string[]>();
+    private static Dictionary<WsDifficulty, string[]> _loadedWords = new Dictionary<WsDifficulty, string[]>(); //Test with profiler in case we don't need to keep words loaded
     private static Dictionary<WsDifficulty, List<int>> _shuffledIndices = new Dictionary<WsDifficulty, List<int>>();
     private static Dictionary<WsDifficulty, int> _cursors = new Dictionary<WsDifficulty, int>();
 
@@ -150,5 +150,8 @@ public static class WordDataManager
         _cursors[diff] = cursor;
         return result;
     }
+
+    //TODO save shuffle indices and cursor in player Prefs
+    // Keep in mind that Jsons can be expanded
 }
 
