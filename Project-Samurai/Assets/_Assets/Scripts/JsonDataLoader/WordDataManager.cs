@@ -6,14 +6,15 @@ using System.Threading.Tasks;
 
 public enum WsCategory
 {
+    None,
     Animals,
-    Food,
-    Travel,
-    Science
+    Colors,
+    Professions
 }
 
 public enum WsDifficulty
 {
+    None,
     Easy,
     Medium,
     Hard
