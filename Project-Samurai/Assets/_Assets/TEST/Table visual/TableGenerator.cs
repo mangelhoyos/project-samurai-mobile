@@ -37,6 +37,7 @@ public class TableGenerator : MonoBehaviour
     public float minCellSize = 8f;
 
     private System.Random rng;
+    private MatchSettingsModel matchSettingsModel;
 
     private char[,] board;                 // [x, y]
     private WordSearchLetter[,] spawned;   // [x, y]
@@ -78,6 +79,8 @@ public class TableGenerator : MonoBehaviour
     private void Awake()
     {
         CacheLayoutRefs();
+        matchSettingsModel = FindAnyObjectByType<MatchSettingsModel>();
+        matchSettingsModel.SelectCathegory(WsCategory.Professions);
     }
 
     private void CacheLayoutRefs()
@@ -122,7 +125,9 @@ public class TableGenerator : MonoBehaviour
         board = new char[gridWidth, gridHeight];
         spawned = new WordSearchLetter[gridWidth, gridHeight];
 
-        NormalizeWordsToUppercase(words, normalizedWords);
+        words = matchSettingsModel.Words.ToArray();
+        matchSettingsModel.GetWordList();
+        NormalizeWordsToUppercase(matchSettingsModel.Words.ToArray(), normalizedWords);
         SortByLengthDesc(normalizedWords);
 
         for (int i = 0; i < normalizedWords.Count; i++)
